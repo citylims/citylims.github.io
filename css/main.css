@@ -28,9 +28,8 @@ li {
 }
 
 h1 {
-  font-family: 'Museo';
-  font-weight: normal;
-  text-align: center;
+  font-size: 4em;
+  font-weight: bolder;
 }
 
 nav {
@@ -103,8 +102,6 @@ section {
   padding-right: 0.83333%;
 }
 .greeting article {
-  /* float: left; */
-  padding-left: 4em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -112,6 +109,12 @@ section {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+}
+.greeting article .bigger {
+  font-size: 145%;
+}
+.greeting article .medium-size {
+  font-size: 125%;
 }
 .greeting article p {
   font-size: 1.5em;

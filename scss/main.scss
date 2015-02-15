@@ -40,9 +40,8 @@ li {
 }
 
 h1 {
-  font-family: 'Museo';
-  font-weight: normal;
-  text-align: center;
+  font-size: 4em  ;
+  font-weight: bolder;
 }
 
 nav {
@@ -100,13 +99,17 @@ section {
   }
 
   article {
-    /* float: left; */
-    padding-left: 4em;
     @include span(6 at 4 of 12);
+    .bigger {
+    font-size: 145%; }
+    .medium-size {
+    font-size: 125%; }
     p {
       font-size: 1.5em;
+
     }
   }
+
 }
 
 aside {
