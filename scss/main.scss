@@ -17,6 +17,10 @@ $susy: (
   gutter-position: inside,
 );
 
+@media (min-width: 64rem) {
+html { font-size: 120%; }
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -146,6 +150,67 @@ aside {
   &:hover {
     opacity: 1;
   }
+}
+
+/* bio */
+.bio li {
+  float: left;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid black;
+  border-radius: 0%;
+  margin: 0.2em;
+}
+
+.bio li.past {
+  background: #03EFC0;
+}
+
+.bio li.empty {
+  background: #A8DEFF;
+}
+
+.bio li.present {
+  background: #FF0335;
+}
+
+.bio li.future {
+  background: #CFCDCF	;
+}
+
+.bio li span {
+  position:absolute;
+  display: none;
+  background: #FFFFE0;
+  border: 1px solid orange;
+  padding: 0.5em 1em;
+  line-height: 1.5em;
+  font-size: 0.85em;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  border-radius: 1em;
+  border-top-left-radius: 0;
+  max-width: 30em;
+}
+
+.bio li.past:not(.empty):hover span,
+.bio li.present:hover span,
+.bio li.birthday:hover span {
+  display: block;
+}
+
+.bio li.birthday {
+  border-color: black;
+  border-width: 3px;
+}
+
+.bio li.past:not(.empty):hover,
+.bio li.present:hover,
+.bio li.birthday:hover {
+  background: white;
+  border-color: #FF4500;
+  border-width: 2px;
 }
 
 
