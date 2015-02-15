@@ -1,0 +1,146 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F6F6F6;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  border-bottom: 5px solid #FF0335;
+  text-align: right;
+  background-color: #F6F6F6;
+}
+nav ul {
+  display: inline;
+}
+nav ul li {
+  margin-left: 1em;
+  display: inline;
+}
+nav ul li a {
+  font-weight: bolder;
+  /* color: white; */
+  text-decoration: none;
+  line-height: 60px;
+  padding-right: 20px;
+}
+nav ul #home-logo {
+  float: left;
+  font-size: 2em;
+  padding-left: 20px;
+}
+
+aside ul {
+  padding: 0;
+}
+aside ul li {
+  list-style: none;
+  margin: 0;
+}
+aside ul li a {
+  display: block;
+  padding: 10px 5%;
+  border-bottom: solid 1px #95a5a6;
+}
+
+.main {
+  background: #F6F6F6;
+}
+.main h2 {
+  color: #FF0080;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* img {
+  max-height: 400px;
+  max-width: 400px;
+  @include span(12 of 12);
+  margin: 15px 0 15px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-top: 2px solid \$primary-color;
+  border-bottom: 2px solid \$primary-color;
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+} */
+@media (min-width: 500px) {
+  .main {
+    /* @include span(8); */
+  }
+
+  aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: right;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+@media (min-width: 960px) {
+  .main {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 87.5%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+    /*
+        .col1, .col2, .col3 {
+          max-height: 500px;
+          max-width: 500px;
+        } */
+  }
+
+  aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 12.5%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+  }
+}
+.main img {
+  max-height: 200px;
+  max-width: 500px;
+}
+
+.main h2 {
+  color: black;
+}

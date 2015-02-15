@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Karla);
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F6F6F6;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Karla";
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Museo';
+  font-weight: normal;
+  text-align: center;
+}
+
+nav {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  width: 100%;
+  height: 70px;
+  border-bottom: 5px solid #FF0335;
+  text-align: right;
+  background-color: #F6F6F6;
+}
+nav ul {
+  display: inline;
+}
+nav ul li {
+  margin-left: 1em;
+  display: inline;
+}
+nav ul li a {
+  font-weight: bolder;
+  /* color: white; */
+  text-decoration: none;
+  line-height: 60px;
+  padding-right: 20px;
+}
+nav ul #home-logo {
+  float: left;
+  font-size: 2em;
+  padding-left: 20px;
+}
+
+.main {
+  background: #F6F6F6;
+}
+.main h2 {
+  color: #FF0080;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: underline;
+}
+
+section {
+  border-bottom: 5px solid #FF0335;
+}
+
+.greeting {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+.greeting img {
+  float: left;
+  max-height: 600px;
+  max-width: 500px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+.greeting article {
+  /* float: left; */
+  padding-left: 4em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+.greeting article p {
+  font-size: 1.5em;
+}
+
+aside {
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 16.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+aside ul {
+  padding: 0;
+}
+aside ul li {
+  list-style: none;
+  margin: 0;
+}
+aside ul li a {
+  display: block;
+  padding: 10px 5%;
+  border-bottom: solid 1px #95a5a6;
+}
+
+.fold {
+  clear: both;
+}
+
+.fold img {
+  max-height: 800px;
+  max-width: 900px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin: 15px 0 15px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* border-top: 2px solid \$primary-color; */
+  /* border-bottom: 2px solid \$primary-color; */
+  opacity: .8;
+}
+.fold img:hover {
+  opacity: 1;
+}

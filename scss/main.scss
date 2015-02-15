@@ -1,0 +1,184 @@
+@import 'susy';
+@import 'breakpoint';
+@import url(http://fonts.googleapis.com/css?family=Karla);
+
+$small: 500px;
+$medium: 700px;
+$large: 960px;
+
+$background-color: #F6F6F6;
+$primary-color: #FF0080;
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-color;
+  @include container(100%);
+  font-family: "Karla";
+
+}
+
+a {
+  color:#2980b9;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-family: 'Museo';
+  font-weight: normal;
+  text-align: center;
+}
+
+nav {
+  @include span(12);
+  width: 100%;
+  height: 70px;
+  border-bottom: 5px solid #FF0335;
+  text-align: right;
+  background-color: $background-color;
+  ul{
+    display: inline;
+    li {
+      margin-left: 1em;
+      display: inline;
+      a {
+        font-weight: bolder;
+        /* color: white; */
+        text-decoration: none;
+        line-height: 60px;
+        padding-right: 20px;
+
+      }
+    }
+    #home-logo {
+      float: left;
+      font-size: 2em;
+      padding-left: 20px;
+    }
+  }
+}
+
+
+
+.main {
+  background: $background-color;
+  h2 {
+    color: $primary-color;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
+
+section {
+  border-bottom: 5px solid #FF0335;
+}
+
+.greeting {
+  @include span(12);
+  img {
+    float:left;
+    max-height: 600px;
+    max-width: 500px;
+    @include span(4 of 12);
+  }
+
+  article {
+    /* float: left; */
+    padding-left: 4em;
+    @include span(6 at 4 of 12);
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+aside {
+  float: left;
+  @include span(2 at 10 of 12);
+  ul {
+  padding: 0;
+    li {
+      list-style: none;
+      margin: 0;
+      a {
+        display: block;
+        padding: 10px 5%;
+        border-bottom: solid 1px #95a5a6;
+      }
+    }
+  }
+}
+
+
+.fold {
+  clear:both;
+}
+.fold img {
+  max-height: 800px;
+  max-width: 900px;
+  @include span(12 of 12);
+  margin: 15px 0 15px 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  /* border-top: 2px solid \$primary-color; */
+  /* border-bottom: 2px solid \$primary-color; */
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+@include breakpoint($small)
+
+/* @include breakpoint(\$large){
+  body{
+    background-color: yellow;
+  }
+} */
+
+
+/* @include breakpoint(\$small) {
+
+  .main {
+    @include span(8);
+  }
+
+  aside {
+    @include span(4 at 9 of 12);
+  }
+}
+
+@include breakpoint(\$large) {
+  @include layout(24);
+
+  .main {
+    @include span(21);
+.col1, .col2, .col3 {
+      max-height: 500px;
+      max-width: 500px;
+    }
+
+  }
+
+  aside {
+    @include span(3 at 21);
+  }
+} */
