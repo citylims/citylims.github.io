@@ -1,7 +1,6 @@
 /* Large screens (1024px) */
 @import url(http://fonts.googleapis.com/css?family=Karla);
 @import url(http://fonts.googleapis.com/css?family=Karla);
-@import url(http://fonts.googleapis.com/css?family=Karla);
 @media (min-width: 64rem) {
   html {
     font-size: 120%;
@@ -44,6 +43,69 @@
   background: #FF0335;
 }
 
+/* main */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  transition-duration: .4s;
+}
+a:hover {
+  color: white;
+  background-color: #FF0335;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 5px solid #FF0335;
+  text-align: right;
+  background-color: #f2f2f2;
+}
+nav ul {
+  display: inline;
+}
+nav ul li {
+  margin: 1em;
+  padding: 1em 0 1em 0;
+  display: inline;
+}
+nav ul li a {
+  font-size: 1.5em;
+  font-weight: bolder;
+  line-height: 60px;
+}
+nav ul #home-logo {
+  float: left;
+  font-size: 2em;
+  padding: 0 20px 0 20px;
+}
+
+/* bio */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Karla";
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 @media (min-width: 64rem) {
   html {
     font-size: 120%;
@@ -78,20 +140,52 @@ body:after {
   background: #FF0335;
 }
 
-/* \$small: 500px;
-\$medium: 700px;
-\$large: 960px;
+/* main */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  transition-duration: .4s;
+}
+a:hover {
+  color: white;
+  background-color: #FF0335;
+}
 
-\$background-color: #F6F6F6;
-\$primary-color: #FF0080;
+li {
+  list-style-type: none;
+}
 
-\$susy: (
-  columns: 12,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-); */
+h1 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 5px solid #FF0335;
+  text-align: right;
+  background-color: #f2f2f2;
+}
+nav ul {
+  display: inline;
+}
+nav ul li {
+  margin: 1em;
+  padding: 1em 0 1em 0;
+  display: inline;
+}
+nav ul li a {
+  font-size: 1.5em;
+  font-weight: bolder;
+  line-height: 60px;
+}
+nav ul #home-logo {
+  float: left;
+  font-size: 2em;
+  padding: 0 20px 0 20px;
+}
+
+/* bio */
 * {
   box-sizing: border-box;
 }
@@ -107,32 +201,6 @@ body:after {
   content: " ";
   display: block;
   clear: both;
-}
-
-nav {
-  width: 100%;
-  border-bottom: 5px solid #FF0335;
-  text-align: right;
-  background-color: #f2f2f2;
-}
-nav ul {
-  display: inline;
-}
-nav ul li {
-  margin-left: 1em;
-  display: inline;
-}
-nav ul li a {
-  font-weight: bolder;
-  color: #2E81B7;
-  text-decoration: none;
-  line-height: 60px;
-  padding-right: 20px;
-}
-nav ul #home-logo {
-  float: left;
-  font-size: 2em;
-  padding-left: 20px;
 }
 
 /* Bio Map */
@@ -160,6 +228,16 @@ nav ul #home-logo {
 
 .bio li.future {
   background: #CFCDCF;
+}
+
+.bio li.last {
+  height: 1em;
+  margin-top: .4em;
+}
+
+.bio li.final {
+  height: .7em;
+  margin-top: .7em;
 }
 
 .bio li span {

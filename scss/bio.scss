@@ -1,65 +1,10 @@
 /* Large screens (1024px) */
 @media (min-width: 64rem) {
-html { font-size: 120%; }
+  html { font-size: 120%; }
 }
 @import 'susy';
 @import 'breakpoint';
-@import url(http://fonts.googleapis.com/css?family=Karla);
 @import "grid", "responsive", "layout", "style";
-
-/* \$small: 500px;
-\$medium: 700px;
-\$large: 960px;
-
-\$background-color: #F6F6F6;
-\$primary-color: #FF0080;
-
-\$susy: (
-  columns: 12,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-); */
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: $background-color;
-  @include container(100%);
-  font-family: "Karla";
-
-}
-
-nav {
-  width: 100%;
-  border-bottom: 5px solid #FF0335;
-  text-align: right;
-  background-color: $background-color;
-  ul{
-    display: inline;
-    li {
-      margin-left: 1em;
-      display: inline;
-      a {
-        font-weight: bolder;
-        color: #2E81B7;
-        text-decoration: none;
-        line-height: 60px;
-        padding-right: 20px;
-
-      }
-    }
-    #home-logo {
-      float: left;
-      font-size: 2em;
-      padding-left: 20px;
-    }
-  }
-}
 
 /* Bio Map */
 
@@ -87,6 +32,16 @@ nav {
 
 .bio li.future {
   background: #CFCDCF	;
+}
+
+.bio li.last {
+  height: 1em;
+  margin-top: .4em;
+}
+
+.bio li.final {
+  height: .7em;
+  margin-top: .7em;
 }
 
 .bio li span {

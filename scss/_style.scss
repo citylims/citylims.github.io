@@ -2,6 +2,7 @@
 $background-color: #f2f2f2;
 $primary-color: #FF0080;
 $accent-color: #FF0335;
+$link-color: #2980b9;
 
 ::-moz-selection {
   color: white;
@@ -11,4 +12,61 @@ $accent-color: #FF0335;
 ::selection {
   color: white;
   background: $accent-color;
+}
+
+/* main */
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition-duration: .4s;
+  &:hover{
+    color: white;
+    background-color: $accent-color;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4em  ;
+  font-weight: bolder;
+}
+
+nav {
+  width: 100%;
+  border-bottom: 5px solid $accent-color;
+  text-align: right;
+  background-color: $background-color;
+  ul{
+    display: inline;
+    li {
+      margin: 1em;
+      padding: 1em 0 1em 0;
+      display: inline;
+      a {
+        font-size: 1.5em;
+        font-weight: bolder;
+        line-height: 60px;
+      }
+    }
+    #home-logo {
+      float: left;
+      font-size: 2em;
+      padding: 0 20px 0 20px;
+    }
+  }
+}
+
+/* bio */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-color;
+  @include container(100%);
+  font-family: "Karla";
 }
