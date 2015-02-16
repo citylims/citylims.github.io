@@ -8,13 +8,7 @@ $large: 960px;
 $background-color: #F6F6F6;
 $primary-color: #FF0080;
 
-$susy: (
-  columns: 12,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-);
+
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;

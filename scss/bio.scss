@@ -1,0 +1,140 @@
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+html { font-size: 120%; }
+}
+@import 'susy';
+@import 'breakpoint';
+@import url(http://fonts.googleapis.com/css?family=Karla);
+@import "grid", "responsive", "layout", "style";
+
+/* \$small: 500px;
+\$medium: 700px;
+\$large: 960px;
+
+\$background-color: #F6F6F6;
+\$primary-color: #FF0080;
+
+\$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+); */
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $background-color;
+  @include container(100%);
+  font-family: "Karla";
+
+}
+
+nav {
+  width: 100%;
+  border-bottom: 5px solid #FF0335;
+  text-align: right;
+  background-color: $background-color;
+  ul{
+    display: inline;
+    li {
+      margin-left: 1em;
+      display: inline;
+      a {
+        font-weight: bolder;
+        color: #2E81B7;
+        text-decoration: none;
+        line-height: 60px;
+        padding-right: 20px;
+
+      }
+    }
+    #home-logo {
+      float: left;
+      font-size: 2em;
+      padding-left: 20px;
+    }
+  }
+}
+
+/* Bio Map */
+
+.bio li {
+  float: left;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border: 1px solid black;
+  border-radius: 0%;
+  margin: 0.2em;
+}
+
+.bio li.past {
+  background: #03EFC0;
+}
+
+.bio li.empty {
+  background: #A8DEFF;
+}
+
+.bio li.present {
+  background: #FF0335;
+}
+
+.bio li.future {
+  background: #CFCDCF	;
+}
+
+.bio li span {
+  position:absolute;
+  display: none;
+  background: #FFFFE0;
+  border: 1px solid orange;
+  padding: 0.5em 1em;
+  line-height: 1.5em;
+  font-size: 0.85em;
+  margin-top: 1em;
+  margin-left: 0.5em;
+  border-radius: 1em;
+  border-top-left-radius: 0;
+  max-width: 30em;
+}
+
+.bio li.past:not(.empty):hover span,
+.bio li.present:hover span,
+.bio li.birthday:hover span {
+  display: block;
+}
+
+.bio li.birthday {
+  border-color: black;
+  border-width: 3px;
+}
+
+.bio li.past:not(.empty):hover,
+.bio li.present:hover,
+.bio li.birthday:hover {
+  background: white;
+  border-color: #FF4500;
+  border-width: 2px;
+}
+
+.container, footer {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 90%;
+}
+
+.bio-header {
+  margin: 30px;
+}
+
+.bio-bottom {
+  width: 400px;
+  height: 400px;
+  color: red;
+}

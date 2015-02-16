@@ -1,38 +1,27 @@
 @import 'susy';
 @import 'breakpoint';
-@import url(http://fonts.googleapis.com/css?family=Karla);
+@import "grid", "layout", "responsive", "style";
 
-$small: 500px;
-$medium: 700px;
-$large: 960px;
 
-$background-color: #F6F6F6;
-$primary-color: #FF0080;
 
-$susy: (
-  columns: 12,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-);
 
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+/* a {
+  color:#2980b9;
+  text-decoration: none;
 }
 
-body {
-  background: $background-color;
-  @include container(100%);
-  font-family: "Karla";
-
-}
+a:hover {
+  background: yellow;
+} */
 
 a {
   color:#2980b9;
   text-decoration: none;
+  transition-duration: .4s;
+  &:hover{
+    color: white;
+    background-color: $accent-color;
+  }
 }
 
 li {
@@ -45,35 +34,29 @@ h1 {
 }
 
 nav {
-  @include span(12);
   width: 100%;
-  height: 70px;
-  border-bottom: 5px solid #FF0335;
+  border-bottom: 5px solid $accent-color;
   text-align: right;
   background-color: $background-color;
   ul{
     display: inline;
     li {
-      margin-left: 1em;
+      margin: 1em;
+      padding: 1em 0 1em 0;
       display: inline;
       a {
+        font-size: 1.5em;
         font-weight: bolder;
-        /* color: white; */
-        text-decoration: none;
         line-height: 60px;
-        padding-right: 20px;
-
       }
     }
     #home-logo {
       float: left;
       font-size: 2em;
-      padding-left: 20px;
+      padding: 0 20px 0 20px;
     }
   }
 }
-
-
 
 .main {
   background: $background-color;
@@ -109,7 +92,6 @@ section {
 
     }
   }
-
 }
 
 aside {
@@ -127,6 +109,63 @@ aside {
       }
     }
   }
+}
+
+/* footer {
+
+  background-color: yellow;
+} */
+
+footer {
+    clear: both;
+    padding: 2em;
+    /* position: relative; */
+    /* z-index: 10; */
+    margin-top: 4em;
+    background-color: #f2f2f2;
+}
+footer p {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin: 2em auto 0;
+    text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons li {
+    display: inline;
+    margin: .5em;
+}
+.icons li a {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    border-bottom: none;
+    color: #696969;
+    &:hover {
+      background-color: $background-color;
+    }
+}
+/* .icons li {
+  display: inline;
+    a {
+      color: black;
+    }
+} */
+
+.fa-codepen:hover {
+  background-color: none;
+  color: gold;
+}
+
+
+.transition a {
+  border-bottom: 1px dashed #f47fb5;
+color: #997c90;
+padding: 0 .2em;
+transition-duration: 3s;
 }
 
 
@@ -147,41 +186,3 @@ aside {
     opacity: 1;
   }
 }
-
-
-@include breakpoint($small)
-
-/* @include breakpoint(\$large){
-  body{
-    background-color: yellow;
-  }
-} */
-
-
-/* @include breakpoint(\$small) {
-
-  .main {
-    @include span(8);
-  }
-
-  aside {
-    @include span(4 at 9 of 12);
-  }
-}
-
-@include breakpoint(\$large) {
-  @include layout(24);
-
-  .main {
-    @include span(21);
-.col1, .col2, .col3 {
-      max-height: 500px;
-      max-width: 500px;
-    }
-
-  }
-
-  aside {
-    @include span(3 at 21);
-  }
-} */
