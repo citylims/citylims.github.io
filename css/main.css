@@ -4,6 +4,14 @@
     font-size: 120%;
   }
 }
+::-moz-selection {
+  background: yellow;
+}
+
+::selection {
+  background: yellow;
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;

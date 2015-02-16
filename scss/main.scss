@@ -8,6 +8,7 @@ $large: 960px;
 
 $background-color: #F6F6F6;
 $primary-color: #FF0080;
+$accent-color: #FF0335;
 
 $susy: (
   columns: 12,
@@ -20,6 +21,9 @@ $susy: (
 @media (min-width: 64rem) {
 html { font-size: 120%; }
 }
+
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -90,7 +94,7 @@ nav {
 }
 
 section {
-  border-bottom: 5px solid #FF0335;
+  border-bottom: 5px solid $accent-color;
 }
 
 .greeting {
