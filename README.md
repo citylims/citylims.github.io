@@ -1,3 +1,2 @@
-# susy
-Susy grid system with Sass
 # portfolio
+Check me out
