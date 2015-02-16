@@ -90,27 +90,3 @@ footer p {
   background-color: none;
   color: gold;
 }
-
-.transition a {
-  border-bottom: 1px dashed #f47fb5;
-  color: #997c90;
-  padding: 0 .2em;
-  transition-duration: 3s;
-}
-
-.fold {
-  clear:both;
-}
-
-.fold img {
-  max-height: 800px;
-  max-width: 900px;
-  @include span(12 of 12);
-  margin: 15px 0 15px 0;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  opacity: .8;
-  &:hover {
-    opacity: 1;
-  }
-}
