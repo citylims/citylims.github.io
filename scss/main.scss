@@ -1,6 +1,7 @@
 @import 'susy';
 @import 'breakpoint';
-@import url(http://fonts.googleapis.com/css?family=Karla);
+/* @import url(http://fonts.googleapis.com/css?family=Karla); */
+@import "grid", "responsive", "style", "layout";
 
 $small: 500px;
 $medium: 700px;
