@@ -1,16 +1,103 @@
 /* Large screens (1024px) */
 @import url(http://fonts.googleapis.com/css?family=Karla);
+@import url(http://fonts.googleapis.com/css?family=Karla);
+@import url(http://fonts.googleapis.com/css?family=Karla);
 @media (min-width: 64rem) {
   html {
     font-size: 120%;
   }
 }
+/* @include breakpoint(\$small) {
+
+  .main {
+    @include span(8);
+  }
+
+  aside {
+    @include span(4 at 9 of 12);
+  }
+}
+
+@include breakpoint(\$large) {
+  @include layout(24);
+
+  .main {
+    @include span(21);
+.col1, .col2, .col3 {
+      max-height: 500px;
+      max-width: 500px;
+    }
+
+  }
+
+  aside {
+    @include span(3 at 21);
+  }
+} */
+::-moz-selection {
+  color: white;
+  background: #FF0335;
+}
+
+::selection {
+  color: white;
+  background: #FF0335;
+}
+
+@media (min-width: 64rem) {
+  html {
+    font-size: 120%;
+  }
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Karla";
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+::-moz-selection {
+  color: white;
+  background: #FF0335;
+}
+
+::selection {
+  color: white;
+  background: #FF0335;
+}
+
+/* \$small: 500px;
+\$medium: 700px;
+\$large: 960px;
+
+\$background-color: #F6F6F6;
+\$primary-color: #FF0080;
+
+\$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+); */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #F6F6F6;
+  background: #f2f2f2;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -24,10 +111,9 @@ body:after {
 
 nav {
   width: 100%;
-  height: 70px;
   border-bottom: 5px solid #FF0335;
   text-align: right;
-  background-color: #F6F6F6;
+  background-color: #f2f2f2;
 }
 nav ul {
   display: inline;

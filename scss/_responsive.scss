@@ -2,7 +2,7 @@ $small: 500px;
 $medium: 700px;
 $large: 960px;
 
-@include breakpoint($small) {
+/* @include breakpoint(\$small) {
 
   .main {
     @include span(8);
@@ -13,7 +13,7 @@ $large: 960px;
   }
 }
 
-@include breakpoint($large) {
+@include breakpoint(\$large) {
   @include layout(24);
 
   .main {
@@ -28,4 +28,4 @@ $large: 960px;
   aside {
     @include span(3 at 21);
   }
-}
+} */

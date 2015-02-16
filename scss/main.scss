@@ -1,39 +1,9 @@
 @import 'susy';
 @import 'breakpoint';
-/* @import url(http://fonts.googleapis.com/css?family=Karla); */
-@import "grid", "responsive", "style", "layout";
+@import "grid", "layout", "responsive", "style";
 
-$small: 500px;
-$medium: 700px;
-$large: 960px;
 
-$background-color: #F6F6F6;
-$primary-color: #FF0080;
 
-$susy: (
-  columns: 12,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-);
-
-@media (min-width: 64rem) {
-html { font-size: 120%; }
-}
-
-*, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  background: $background-color;
-  @include container(100%);
-  font-family: "Karla";
-
-}
 
 a {
   color:#2980b9;
@@ -50,10 +20,8 @@ h1 {
 }
 
 nav {
-  @include span(12);
   width: 100%;
-  height: 70px;
-  border-bottom: 5px solid #FF0335;
+  border-bottom: 5px solid $accent-color;
   text-align: right;
   background-color: $background-color;
   ul{
@@ -128,6 +96,47 @@ aside {
       }
     }
   }
+}
+
+/* footer {
+
+  background-color: yellow;
+} */
+
+footer {
+    clear: both;
+    padding: 2em;
+    /* position: relative; */
+    /* z-index: 10; */
+    margin-top: 4em;
+    background-color: #f2f2f2;
+}
+footer p {
+    font-size: 19.2px;
+    font-size: 1.2rem;
+    margin: 2em auto 0;
+    text-align: center;
+}
+
+.icons li {
+    display: inline-block;
+    margin: .5em;
+}
+.icons li a {
+    font-size: 38.4px;
+    font-size: 2.4rem;
+    border-bottom: none;
+    color: #696969;
+}
+.icons li {
+  display: inline;
+    a {
+      color: black;
+    }
+}
+
+.fa-codepen:hover {
+  color: gold;
 }
 
 .fold {
