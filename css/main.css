@@ -71,9 +71,22 @@ body:after {
   background: #FF0335;
 }
 
+/* a {
+  color:#2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  background: yellow;
+} */
 a {
   color: #2980b9;
   text-decoration: none;
+  transition-duration: .4s;
+}
+a:hover {
+  color: white;
+  background-color: #FF0335;
 }
 
 li {
@@ -95,19 +108,19 @@ nav ul {
   display: inline;
 }
 nav ul li {
-  margin-left: 1em;
+  margin: 1em;
+  padding: 1em 0 1em 0;
   display: inline;
 }
 nav ul li a {
+  font-size: 1.5em;
   font-weight: bolder;
-  text-decoration: none;
   line-height: 60px;
-  padding-right: 20px;
 }
 nav ul #home-logo {
   float: left;
   font-size: 2em;
-  padding-left: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .main {
@@ -207,8 +220,12 @@ footer p {
   text-align: center;
 }
 
+.icons {
+  text-align: center;
+}
+
 .icons li {
-  display: inline-block;
+  display: inline;
   margin: .5em;
 }
 
@@ -218,16 +235,26 @@ footer p {
   border-bottom: none;
   color: #696969;
 }
+.icons li a:hover {
+  background-color: #f2f2f2;
+}
 
-.icons li {
+/* .icons li {
   display: inline;
-}
-.icons li a {
-  color: black;
+    a {
+      color: black;
+    }
+} */
+.fa-codepen:hover {
+  background-color: none;
+  color: gold;
 }
 
-.fa-codepen:hover {
-  color: gold;
+.transition a {
+  border-bottom: 1px dashed #f47fb5;
+  color: #997c90;
+  padding: 0 .2em;
+  transition-duration: 3s;
 }
 
 .fold {
