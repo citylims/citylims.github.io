@@ -33,6 +33,7 @@
     @include span(3 at 21);
   }
 } */
+/* global */
 ::-moz-selection {
   color: white;
   background: #FF0335;
@@ -41,6 +42,23 @@
 ::selection {
   color: white;
   background: #FF0335;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Karla";
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 /* main */
@@ -89,23 +107,7 @@ nav ul #home-logo {
 }
 
 /* bio */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #f2f2f2;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Karla";
-}
-body:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
+/* projects */
 @media (min-width: 64rem) {
   html {
     font-size: 120%;
@@ -130,6 +132,7 @@ body:after {
   clear: both;
 }
 
+/* global */
 ::-moz-selection {
   color: white;
   background: #FF0335;
@@ -138,6 +141,23 @@ body:after {
 ::selection {
   color: white;
   background: #FF0335;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Karla";
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 /* main */
@@ -186,23 +206,7 @@ nav ul #home-logo {
 }
 
 /* bio */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #f2f2f2;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Karla";
-}
-body:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
+/* projects */
 /* Bio Map */
 .bio li {
   float: left;
