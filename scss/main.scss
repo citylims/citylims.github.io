@@ -8,7 +8,6 @@ $large: 960px;
 
 $background-color: #F6F6F6;
 $primary-color: #FF0080;
-$accent-color: #FF0335;
 
 $susy: (
   columns: 12,
@@ -21,9 +20,6 @@ $susy: (
 @media (min-width: 64rem) {
 html { font-size: 120%; }
 }
-
-::-moz-selection { background: yellow; }
-::selection { background: yellow; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -66,7 +62,6 @@ nav {
       display: inline;
       a {
         font-weight: bolder;
-        /* color: white; */
         text-decoration: none;
         line-height: 60px;
         padding-right: 20px;
@@ -81,8 +76,6 @@ nav {
   }
 }
 
-
-
 .main {
   background: $background-color;
   h2 {
@@ -94,7 +87,7 @@ nav {
 }
 
 section {
-  border-bottom: 5px solid $accent-color;
+  border-bottom: 5px solid #FF0335;
 }
 
 .greeting {
@@ -117,7 +110,6 @@ section {
 
     }
   }
-
 }
 
 aside {
@@ -137,7 +129,6 @@ aside {
   }
 }
 
-
 .fold {
   clear:both;
 }
@@ -155,43 +146,3 @@ aside {
     opacity: 1;
   }
 }
-
-
-
-
-@include breakpoint($small)
-
-/* @include breakpoint(\$large){
-  body{
-    background-color: yellow;
-  }
-} */
-
-
-/* @include breakpoint(\$small) {
-
-  .main {
-    @include span(8);
-  }
-
-  aside {
-    @include span(4 at 9 of 12);
-  }
-}
-
-@include breakpoint(\$large) {
-  @include layout(24);
-
-  .main {
-    @include span(21);
-.col1, .col2, .col3 {
-      max-height: 500px;
-      max-width: 500px;
-    }
-
-  }
-
-  aside {
-    @include span(3 at 21);
-  }
-} */

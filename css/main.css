@@ -4,14 +4,6 @@
     font-size: 120%;
   }
 }
-::-moz-selection {
-  background: yellow;
-}
-
-::selection {
-  background: yellow;
-}
-
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -68,7 +60,6 @@ nav ul li {
 }
 nav ul li a {
   font-weight: bolder;
-  /* color: white; */
   text-decoration: none;
   line-height: 60px;
   padding-right: 20px;
