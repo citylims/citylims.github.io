@@ -11,3 +11,12 @@ img {
     opacity: 1;
   }
 }
+
+.description {
+  margin-top: 1em;
+  @include span(4 at 8 of 12);
+}
+
+.stat {
+  @extend .description;
+}
