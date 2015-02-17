@@ -105,15 +105,34 @@ footer p {
   border-bottom: none;
   color: #696969;
   &:hover {
-    background-color: $background-color;
+  /* to reset ::selection  */
+  background-color: $background-color;
   }
 }
 
 .fa-codepen:hover {
-  background-color: none;
-  color: gold;
+  color: black;
 }
 
+.fa-reddit:hover {
+  color: #FC461D;
+}
+
+.fa-medium:hover {
+  color: black;
+}
+
+.fa-linkedin-square:hover {
+  color: #1F84BA;
+}
+
+.fa-twitter:hover {
+  color: #64A9DD;
+}
+
+.fa-github:hover {
+  color: black;
+}
 /* bio */
 
 /* projects */

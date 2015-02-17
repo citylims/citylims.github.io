@@ -132,12 +132,32 @@ footer p {
   color: #696969;
 }
 .icons li a:hover {
+  /* to reset ::selection  */
   background-color: #f2f2f2;
 }
 
 .fa-codepen:hover {
-  background-color: none;
-  color: gold;
+  color: black;
+}
+
+.fa-reddit:hover {
+  color: #FC461D;
+}
+
+.fa-medium:hover {
+  color: black;
+}
+
+.fa-linkedin-square:hover {
+  color: #1F84BA;
+}
+
+.fa-twitter:hover {
+  color: #64A9DD;
+}
+
+.fa-github:hover {
+  color: black;
 }
 
 /* bio */
@@ -271,12 +291,32 @@ footer p {
   color: #696969;
 }
 .icons li a:hover {
+  /* to reset ::selection  */
   background-color: #f2f2f2;
 }
 
 .fa-codepen:hover {
-  background-color: none;
-  color: gold;
+  color: black;
+}
+
+.fa-reddit:hover {
+  color: #FC461D;
+}
+
+.fa-medium:hover {
+  color: black;
+}
+
+.fa-linkedin-square:hover {
+  color: #1F84BA;
+}
+
+.fa-twitter:hover {
+  color: #64A9DD;
+}
+
+.fa-github:hover {
+  color: black;
 }
 
 /* bio */
