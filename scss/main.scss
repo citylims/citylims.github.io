@@ -53,44 +53,6 @@ aside {
   }
 }
 
-footer {
-  clear: both;
-  padding: 2em;
-  margin-top: 4em;
-  background-color: #f2f2f2;
-}
-
-footer p {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  margin: 2em auto 0;
-  text-align: center;
-}
-
-.icons {
-  text-align: center;
-}
-
-.icons li {
-  display: inline;
-  margin: .5em;
-}
-
-.icons li a {
-  font-size: 38.4px;
-  font-size: 2.4rem;
-  border-bottom: none;
-  color: #696969;
-  &:hover {
-    background-color: $background-color;
-  }
-}
-
-.fa-codepen:hover {
-  background-color: none;
-  color: gold;
-}
-
 .shake:hover {
   -webkit-animation: shake .5s ease-in-out;
   -moz-animation: shake .5s ease-in-out;

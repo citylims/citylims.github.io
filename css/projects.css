@@ -75,6 +75,7 @@ h1 {
   font-weight: bolder;
 }
 
+/* nav */
 nav {
   width: 100%;
   border-bottom: 5px solid #FF0335;
@@ -98,6 +99,45 @@ nav ul #home-logo {
   float: left;
   font-size: 2em;
   padding: 0 20px 0 20px;
+}
+
+/* footer */
+footer {
+  clear: both;
+  padding: 2em;
+  margin-top: 4em;
+  background-color: #f2f2f2;
+}
+
+footer p {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 2em auto 0;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons li {
+  display: inline;
+  margin: .5em;
+}
+
+.icons li a {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  border-bottom: none;
+  color: #696969;
+}
+.icons li a:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-codepen:hover {
+  background-color: none;
+  color: gold;
 }
 
 /* bio */
@@ -174,6 +214,7 @@ h1 {
   font-weight: bolder;
 }
 
+/* nav */
 nav {
   width: 100%;
   border-bottom: 5px solid #FF0335;
@@ -197,6 +238,45 @@ nav ul #home-logo {
   float: left;
   font-size: 2em;
   padding: 0 20px 0 20px;
+}
+
+/* footer */
+footer {
+  clear: both;
+  padding: 2em;
+  margin-top: 4em;
+  background-color: #f2f2f2;
+}
+
+footer p {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 2em auto 0;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons li {
+  display: inline;
+  margin: .5em;
+}
+
+.icons li a {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  border-bottom: none;
+  color: #696969;
+}
+.icons li a:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-codepen:hover {
+  background-color: none;
+  color: gold;
 }
 
 /* bio */

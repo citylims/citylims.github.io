@@ -48,6 +48,7 @@ h1 {
   font-weight: bolder;
 }
 
+/* nav */
 nav {
   width: 100%;
   border-bottom: 5px solid #FF0335;
@@ -71,6 +72,45 @@ nav ul #home-logo {
   float: left;
   font-size: 2em;
   padding: 0 20px 0 20px;
+}
+
+/* footer */
+footer {
+  clear: both;
+  padding: 2em;
+  margin-top: 4em;
+  background-color: #f2f2f2;
+}
+
+footer p {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 2em auto 0;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons li {
+  display: inline;
+  margin: .5em;
+}
+
+.icons li a {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  border-bottom: none;
+  color: #696969;
+}
+.icons li a:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-codepen:hover {
+  background-color: none;
+  color: gold;
 }
 
 /* bio */
@@ -99,6 +139,33 @@ body:after {
   clear: both;
 }
 
+/* @include breakpoint(\$small) {
+
+  .main {
+    @include span(8);
+  }
+
+  aside {
+    @include span(4 at 9 of 12);
+  }
+}
+
+@include breakpoint(\$large) {
+  @include layout(24);
+
+  .main {
+    @include span(21);
+.col1, .col2, .col3 {
+      max-height: 500px;
+      max-width: 500px;
+    }
+
+  }
+
+  aside {
+    @include span(3 at 21);
+  }
+} */
 /* global */
 ::-moz-selection {
   color: white;
@@ -147,6 +214,7 @@ h1 {
   font-weight: bolder;
 }
 
+/* nav */
 nav {
   width: 100%;
   border-bottom: 5px solid #FF0335;
@@ -170,6 +238,45 @@ nav ul #home-logo {
   float: left;
   font-size: 2em;
   padding: 0 20px 0 20px;
+}
+
+/* footer */
+footer {
+  clear: both;
+  padding: 2em;
+  margin-top: 4em;
+  background-color: #f2f2f2;
+}
+
+footer p {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 2em auto 0;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons li {
+  display: inline;
+  margin: .5em;
+}
+
+.icons li a {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  border-bottom: none;
+  color: #696969;
+}
+.icons li a:hover {
+  background-color: #f2f2f2;
+}
+
+.fa-codepen:hover {
+  background-color: none;
+  color: gold;
 }
 
 /* bio */
@@ -249,44 +356,6 @@ aside ul li a {
   display: block;
   padding: 10px 5%;
   border-bottom: solid 1px #95a5a6;
-}
-
-footer {
-  clear: both;
-  padding: 2em;
-  margin-top: 4em;
-  background-color: #f2f2f2;
-}
-
-footer p {
-  font-size: 19.2px;
-  font-size: 1.2rem;
-  margin: 2em auto 0;
-  text-align: center;
-}
-
-.icons {
-  text-align: center;
-}
-
-.icons li {
-  display: inline;
-  margin: .5em;
-}
-
-.icons li a {
-  font-size: 38.4px;
-  font-size: 2.4rem;
-  border-bottom: none;
-  color: #696969;
-}
-.icons li a:hover {
-  background-color: #f2f2f2;
-}
-
-.fa-codepen:hover {
-  background-color: none;
-  color: gold;
 }
 
 .shake:hover {
