@@ -2,20 +2,6 @@
 @import 'breakpoint';
 @import "grid", "layout", "responsive", "style";
 
-.main {
-  background: $background-color;
-  h2 {
-    color: $primary-color;
-    font-size: 3em;
-    text-align: center;
-    text-decoration: underline;
-  }
-}
-
-section {
-  border-bottom: 5px solid #FF0335;
-}
-
 .greeting {
   @include span(12);
   img {
@@ -36,6 +22,10 @@ section {
   }
 }
 
+section {
+  border-bottom: 5px solid #FF0335;
+}
+
 aside {
   float: left;
   @include span(2 at 10 of 12);
@@ -53,6 +43,7 @@ aside {
   }
 }
 
+/* greeting shaker */
 .shake:hover {
   -webkit-animation: shake .5s ease-in-out;
   -moz-animation: shake .5s ease-in-out;

@@ -1,3 +1,30 @@
+/* @include breakpoint(\$small) {
+
+  .main {
+    @include span(8);
+  }
+
+  aside {
+    @include span(4 at 9 of 12);
+  }
+}
+
+@include breakpoint(\$large) {
+  @include layout(24);
+
+  .main {
+    @include span(21);
+.col1, .col2, .col3 {
+      max-height: 500px;
+      max-width: 500px;
+    }
+
+  }
+
+  aside {
+    @include span(3 at 21);
+  }
+} */
 @import url(http://fonts.googleapis.com/css?family=Karla);
 /* global */
 @import url(http://fonts.googleapis.com/css?family=Karla);
@@ -163,33 +190,6 @@ body:after {
   clear: both;
 }
 
-/* @include breakpoint(\$small) {
-
-  .main {
-    @include span(8);
-  }
-
-  aside {
-    @include span(4 at 9 of 12);
-  }
-}
-
-@include breakpoint(\$large) {
-  @include layout(24);
-
-  .main {
-    @include span(21);
-.col1, .col2, .col3 {
-      max-height: 500px;
-      max-width: 500px;
-    }
-
-  }
-
-  aside {
-    @include span(3 at 21);
-  }
-} */
 /* global */
 ::-moz-selection {
   color: white;
@@ -329,117 +329,120 @@ footer p {
 
 /* bio */
 /* projects */
-.greeting {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-.greeting img {
-  float: left;
-  max-height: 600px;
-  max-width: 500px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-.greeting article {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 50%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-.greeting article .bigger {
-  font-size: 145%;
-}
-.greeting article .medium-size {
-  font-size: 125%;
-}
-.greeting article p {
-  font-size: 1.5em;
+.resume-block {
+  padding: 20px;
 }
 
-section {
-  border-bottom: 5px solid #FF0335;
+.item {
+  margin: 20px 0;
 }
 
-aside {
-  float: left;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 16.66667%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-aside ul {
+.headlines, .resume-page h2, .resume-page h3, .resume-page h4, .resume-page h5 {
   padding: 0;
-}
-aside ul li {
-  list-style: none;
   margin: 0;
-}
-aside ul li a {
-  display: block;
-  padding: 10px 5%;
-  border-bottom: solid 1px #95a5a6;
+  font-weight: 300;
+  color: #FF0335;
 }
 
-/* greeting shaker */
-.shake:hover {
-  -webkit-animation: shake .5s ease-in-out;
-  -moz-animation: shake .5s ease-in-out;
-  animation: shake .5s ease-in-out;
+.resume-page h4 ul {
+  margin-right: 48px;
 }
 
-@-webkit-keyframes shake {
-  0% {
-    -webkit-transform: translateX(0);
-  }
-  20% {
-    -webkit-transform: translateX(-10px);
-  }
-  40% {
-    -webkit-transform: translateX(10px);
-  }
-  60% {
-    -webkit-transform: translateX(-10px);
-  }
-  80% {
-    -webkit-transform: translateX(10px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-  }
+h4 li {
+  padding: 0 0 12px 0;
 }
-@-moz-keyframes shake {
-  0% {
-    -moz-transform: translateX(0);
-  }
-  20% {
-    -moz-transform: translateX(-10px);
-  }
-  40% {
-    -moz-transform: translateX(10px);
-  }
-  60% {
-    -moz-transform: translateX(-10px);
-  }
-  80% {
-    -moz-transform: translateX(10px);
-  }
-  100% {
-    -moz-transform: translateX(0);
-  }
+
+.resume-page {
+  margin-left: 10em;
 }
+.resume-page h2 {
+  font-size: 2em;
+  color: #2E81B7;
+  font-weight: 700;
+  border-bottom: 5px solid #2E81B7;
+  display: inline-block;
+  line-height: 40px;
+  margin-top: 28px;
+}
+.resume-page h3 {
+  color: black;
+  font-weight: 700;
+  font-size: 150%;
+  margin-top: 20px;
+  padding-right: 10px;
+  line-height: 28px;
+}
+.resume-page h3, .resume-page h4 {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+.resume-page h4 {
+  line-height: 28px;
+}
+.resume-page h5 {
+  font-size: 70%;
+  color: #2E81B7;
+  margin-top: 0;
+  line-height: 32px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.resume-page p {
+  width: 80%;
+}
+
+.resume-header {
+  color: #FFF;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.rule {
+  width: 80%;
+  box-sizing: border-box;
+  height: 1px;
+  background: #2E81B7;
+}
+
+/* @media (min-width: 645px) {
+
+  body, h1, h2, h3, h4 {
+    font-size: 24px;
+  }
+
+  header {
+    padding: 30px 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
+
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  h3, h4 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+  }
+
+  h4 ul {
+    margin-right: 48px;
+  }
+
+  h4 li {
+    padding: 0 0 12px 0;
+  }
+
+  footer {
+    padding: 30px 0 40px;
+  }
+
+}
+ */
