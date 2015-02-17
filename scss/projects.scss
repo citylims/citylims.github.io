@@ -12,11 +12,33 @@ img {
   }
 }
 
+.projects {
+  h2{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.item {
+  @include container(100%);
+}
 .description {
-  margin-top: 1em;
+  margin-top: .8em;
   @include span(4 at 8 of 12);
 }
 
 .stat {
+  margin-top: 0;
   @extend .description;
+  ul {
+    margin-top: -10px;
+    text-indent: 20px;
+  }
 }

@@ -66,6 +66,10 @@ a:hover {
   background-color: #FF0335;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 li {
   list-style-type: none;
 }
@@ -225,6 +229,10 @@ a:hover {
   background-color: #FF0335;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 li {
   list-style-type: none;
 }
@@ -337,8 +345,31 @@ img:hover {
   opacity: 1;
 }
 
+.projects h2 {
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.item {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 .description, .stat {
-  margin-top: 1em;
+  margin-top: .8em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -346,4 +377,12 @@ img:hover {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
+}
+
+.stat {
+  margin-top: 0;
+}
+.stat ul {
+  margin-top: -10px;
+  text-indent: 20px;
 }

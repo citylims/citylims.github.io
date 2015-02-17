@@ -6,26 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/projects.css">
-</head>
-<body>
+</head><body>
   <header>
     <nav>
       <ul>
         <li><a id="home-logo"href="index.html">Austin Formica</a></li>
         <li><a href="bio.html">Bio</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="resume.html">Resume</a></li>
       </ul>
     </nav>
   </header>
-  <div class="main">
-    <a href="#"><img src="img/dcpet_pic.png"></a>
-    <div class="description">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt voluptatibus accusantium quia consectetur doloremque dignissimos enim neque, omnis nostrum ipsum, fugit cumque quidem sequi labore velit, voluptate sed tempora!</p>
-    </div>
-    <div class="stat">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt voluptatibus accusantium quia consectetur doloremque dignissimos enim neque, omnis nostrum ipsum, fugit cumque quidem sequi labore velit, voluptate sed tempora!</p>
+  <h1 class="title">Recent Work</h1>
+  <div class="projects">
+      <a href="#"><img src="img/dcpet_pic.png"></a>
+      <div class="description">
+        <h2>DC Pet Connection</h2>
+        <p> Is a social networking application for pet owners in the DC area, deisgned to help users make connections in their selected neighborhood. Once logged in you can create your own custom profile for you pets, and even interact with neighbors through writing and tagging posts.</p>
+      </div>
+      <h2>App Specs</h2>
+      <div class="stat">
+        <ul>
+          <li>*<b>Framework:</b> Sinatra</li>
+          <li>*<b>Database:</b> Postgresql</li>
+          <li>*<b>Database:</b> ActiveRecord</li>
+          <li>*<b>User Authentication:</b> Bcrypt</li>
+          <li>*<b>Deployment:</b> Heroku</li>
+        </ul>
+        <p><a href="#">view source code</a></p>
+      </div>
     </div>
     <a href="#"><img src="img/honeybuckets_pic.png"></a>
     <div class="description"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt voluptatibus accusantium quia consectetur doloremque dignissimos enim neque, omnis nostrum ipsum, fugit cumque quidem sequi labore velit, voluptate sed tempora!</p></div>
