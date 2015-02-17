@@ -14,14 +14,19 @@ img {
 
 .projects {
   h2{
+    color: $primary-color;
     font-size: 1.3em;
     font-weight: bolder;
     text-decoration: underline;
   }
   h3 {
+    color: $primary-color;
     font-weight: bold;
     text-decoration: underline;
     text-indent: 3.5em;
+  }
+  b {
+    /* color: \$accent-color; */
   }
 }
 
@@ -33,6 +38,7 @@ img {
 .item {
   @include container(100%);
 }
+
 .description {
   margin-top: .5em;
   @include span(4 at 8 of 12);
@@ -44,8 +50,12 @@ img {
   ul {
     margin-top: -10px;
     text-indent: 20px;
+    li {
+      /* font-weight: bold; */
+    }
   }
   p {
+    font-size: 90%;
     text-indent: 3.5em;
   }
 }
