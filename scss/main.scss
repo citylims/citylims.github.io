@@ -90,3 +90,61 @@ footer p {
   background-color: none;
   color: gold;
 }
+
+.shake:hover {
+  -webkit-animation: shake .5s ease-in-out;
+  -moz-animation: shake .5s ease-in-out;
+  animation: shake .5s ease-in-out;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  20% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  40% {
+    -webkit-transform: translateX(10px);
+  }
+
+  60% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes shake {
+  0% {
+    -moz-transform: translateX(0);
+  }
+
+  20% {
+    -moz-transform: translateX(-10px);
+  }
+
+  40% {
+    -moz-transform: translateX(10px);
+  }
+
+  60% {
+    -moz-transform: translateX(-10px);
+  }
+
+  80% {
+    -moz-transform: translateX(10px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}
