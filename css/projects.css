@@ -363,7 +363,7 @@ img:hover {
   text-indent: 3.5em;
 }
 .projects b {
-  /* color: \$accent-color; */
+  color: #FF0335;
 }
 
 .title {
@@ -372,14 +372,7 @@ img:hover {
 }
 
 .item {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.item:after {
-  content: " ";
-  display: block;
-  clear: both;
+  /* @include container(100%); */
 }
 
 .description, .stat {
@@ -401,7 +394,7 @@ img:hover {
   text-indent: 20px;
 }
 .stat ul li {
-  /* font-weight: bold; */
+  font-weight: bold;
 }
 .stat p {
   font-size: 90%;
