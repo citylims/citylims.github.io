@@ -346,7 +346,7 @@ img:hover {
 }
 
 .projects h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
@@ -369,7 +369,7 @@ img:hover {
 }
 
 .description, .stat {
-  margin-top: .8em;
+  margin-top: .5em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -385,4 +385,7 @@ img:hover {
 .stat ul {
   margin-top: -10px;
   text-indent: 20px;
+}
+.stat p {
+  text-indent: 3.5em;
 }

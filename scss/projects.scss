@@ -14,7 +14,7 @@ img {
 
 .projects {
   h2{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     text-decoration: underline;
     text-align: center;
@@ -30,7 +30,7 @@ img {
   @include container(100%);
 }
 .description {
-  margin-top: .8em;
+  margin-top: .5em;
   @include span(4 at 8 of 12);
 }
 
@@ -40,5 +40,8 @@ img {
   ul {
     margin-top: -10px;
     text-indent: 20px;
+  }
+  p {
+    text-indent: 3.5em;
   }
 }
