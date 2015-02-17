@@ -347,6 +347,9 @@ img:hover {
   opacity: .8;
 }
 
+.projects {
+  clear: both;
+}
 .projects h2 {
   color: black;
   font-size: 1.3em;

@@ -13,6 +13,7 @@ img {
 }
 
 .projects {
+  clear: both;
   h2{
     color: $primary-color;
     font-size: 1.3em;
@@ -36,7 +37,7 @@ img {
 }
 
 .item {
-  @include container(100%);
+@include container(100%);
 }
 
 .description {
