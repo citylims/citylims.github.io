@@ -30,12 +30,12 @@
 @import url(http://fonts.googleapis.com/css?family=Karla);
 ::-moz-selection {
   color: white;
-  background: #FF0335;
+  background: #012461;
 }
 
 ::selection {
   color: white;
-  background: #FF0335;
+  background: #012461;
 }
 
 * {
@@ -57,13 +57,13 @@ body:after {
 
 /* main */
 a {
-  color: #2980b9;
+  color: #00519F;
   text-decoration: none;
   transition-duration: .4s;
 }
 a:hover {
   color: white;
-  background-color: #FF0335;
+  background-color: #012461;
 }
 
 .active {
@@ -82,7 +82,7 @@ h1 {
 /* nav */
 nav {
   width: 100%;
-  border-bottom: 5px solid #FF0335;
+  border-bottom: 10px solid #012461;
   text-align: right;
   background-color: #f2f2f2;
 }
@@ -108,7 +108,7 @@ nav ul #home-logo {
 /* footer */
 footer {
   background-color: #f2f2f2;
-  border-top: 1px solid #FF0335;
+  border-top: 1px solid #012461;
   clear: both;
   margin-top: 3em;
   padding: 2em;
@@ -194,12 +194,12 @@ body:after {
 /* global */
 ::-moz-selection {
   color: white;
-  background: #FF0335;
+  background: #012461;
 }
 
 ::selection {
   color: white;
-  background: #FF0335;
+  background: #012461;
 }
 
 * {
@@ -221,13 +221,13 @@ body:after {
 
 /* main */
 a {
-  color: #2980b9;
+  color: #00519F;
   text-decoration: none;
   transition-duration: .4s;
 }
 a:hover {
   color: white;
-  background-color: #FF0335;
+  background-color: #012461;
 }
 
 .active {
@@ -246,7 +246,7 @@ h1 {
 /* nav */
 nav {
   width: 100%;
-  border-bottom: 5px solid #FF0335;
+  border-bottom: 10px solid #012461;
   text-align: right;
   background-color: #f2f2f2;
 }
@@ -272,7 +272,7 @@ nav ul #home-logo {
 /* footer */
 footer {
   background-color: #f2f2f2;
-  border-top: 1px solid #FF0335;
+  border-top: 1px solid #012461;
   clear: both;
   margin-top: 3em;
   padding: 2em;
@@ -343,7 +343,7 @@ footer p {
   padding: 0;
   margin: 0;
   font-weight: 300;
-  color: #FF0335;
+  color: #012461;
 }
 
 .resume-page h4 ul {

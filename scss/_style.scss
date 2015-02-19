@@ -2,8 +2,8 @@
 $background-color: #f2f2f2;
 $primary-color: black;
 $secondary-color: #2E81B7;
-$accent-color: #FF0335;
-$link-color: #2980b9;
+$accent-color: #012461;
+$link-color: #00519F;
 
 /* global */
 ::-moz-selection {
@@ -56,7 +56,7 @@ h1 {
 
 nav {
   width: 100%;
-  border-bottom: 5px solid $accent-color;
+  border-bottom: 10px solid $accent-color;
   text-align: right;
   background-color: $background-color;
   ul{
