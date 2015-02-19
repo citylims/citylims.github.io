@@ -12,17 +12,6 @@
   background: $accent-color;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: $background-color;
-  @include container(100%);
-  font-family: "Karla";
-}
-
-
 /* main */
 a {
   color: $link-color;

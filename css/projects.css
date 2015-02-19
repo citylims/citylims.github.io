@@ -34,23 +34,6 @@ body:after {
   background: #012461;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: #f2f2f2;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Karla";
-}
-body:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
 /* main */
 a {
   color: #00519F;
