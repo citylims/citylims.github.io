@@ -1,6 +1,6 @@
 @import 'susy';
 @import 'breakpoint';
-@import "grid", "responsive", "layout", "style";
+@import "grid", "responsive", "layout", "style", "color";
 
 img {
   @include span(8 of 12);
