@@ -1,6 +1,6 @@
 @import 'susy';
 @import 'breakpoint';
-@import "grid", "responsive", "layout", "style";
+@import "grid", "responsive", "layout", "style", "color";
 
 .resume-block {
   padding: 20px;
@@ -80,45 +80,3 @@
   height: 1px;
   background: $secondary-color;
 }
-
-/* @media (min-width: 645px) {
-
-  body, h1, h2, h3, h4 {
-    font-size: 24px;
-  }
-
-  header {
-    padding: 30px 0;
-    margin-bottom: 16px;
-    font-size: 32px;
-  }
-
-  .container {
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  h5 {
-    font-size: 12px;
-  }
-
-  h3, h4 {
-    display: inline-block;
-    vertical-align: top;
-    margin-top: 20px;
-  }
-
-  h4 ul {
-    margin-right: 48px;
-  }
-
-  h4 li {
-    padding: 0 0 12px 0;
-  }
-
-  footer {
-    padding: 30px 0 40px;
-  }
-
-}
- */

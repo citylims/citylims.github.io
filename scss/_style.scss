@@ -1,9 +1,5 @@
+@import "color";
 @import url(http://fonts.googleapis.com/css?family=Karla);
-$background-color: #f2f2f2;
-$primary-color: black;
-$secondary-color: #2E81B7;
-$accent-color: #012461;
-$link-color: #00519F;
 
 /* global */
 ::-moz-selection {
@@ -15,18 +11,6 @@ $link-color: #00519F;
   color: white;
   background: $accent-color;
 }
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: $background-color;
-  @include container(100%);
-  font-family: "Karla";
-}
-
 
 /* main */
 a {
@@ -85,8 +69,7 @@ footer {
   background-color: #f2f2f2;
   border-top: 1px solid $accent-color;
   clear: both;
-  margin-top: 3em;
-  padding: 2em;
+  padding: .5em;
 }
 
 footer p {

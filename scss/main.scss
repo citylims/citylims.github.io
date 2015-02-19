@@ -1,6 +1,6 @@
 @import 'susy';
 @import 'breakpoint';
-@import "grid", "layout", "responsive", "style";
+@import "grid", "layout", "responsive", "style", "color";
 
 .greeting {
   @include span(12);

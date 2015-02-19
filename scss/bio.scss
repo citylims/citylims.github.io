@@ -1,11 +1,6 @@
-/* Large screens (1024px) */
-@media (min-width: 64rem) {
-  html { font-size: 120%; }
-}
-
 @import 'susy';
 @import 'breakpoint';
-@import "grid", "responsive", "layout", "style";
+@import "grid", "responsive", "layout", "style", "color";
 
 /* Bio Map */
 
