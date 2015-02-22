@@ -167,6 +167,7 @@ footer p {
   padding-right: 0.83333%;
 }
 .greeting article {
+  margin-left: 50px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -187,29 +188,6 @@ footer p {
 
 section {
   border-bottom: 5px solid #012461;
-}
-
-aside {
-  float: left;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 16.66667%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
-}
-aside ul {
-  padding: 0;
-}
-aside ul li {
-  list-style: none;
-  margin: 0;
-}
-aside ul li a {
-  display: block;
-  padding: 10px 5%;
-  border-bottom: solid 1px #95a5a6;
 }
 
 /* greeting shaker */
