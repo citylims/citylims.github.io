@@ -25,7 +25,12 @@
 
 section {
   border-bottom: 5px solid $accent-color;
+  .blurb {
+    margin-left: 3em;
+  }
 }
+
+
 
 /* greeting shaker */
 .shake:hover {
