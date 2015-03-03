@@ -64,25 +64,15 @@ nav {
   border-bottom: 10px solid #012461;
   text-align: right;
   background-color: #f2f2f2;
+  padding: 0 1em;
 }
-nav ul {
-  display: inline;
-  /*   margin-left: 40%; */
-}
-nav ul li {
-  margin: 1em;
-  padding: 1em 0 1em 0;
-  display: inline;
-}
-nav ul li a {
+nav a {
   font-size: 1.5em;
   font-weight: bolder;
   line-height: 60px;
-}
-nav ul #home-logo {
-  text-align: left;
-  font-size: 5em;
-  padding: 0 20px 0 20px;
+  margin-right: 1em;
+  /* margin: 1em; */
+  /* padding: 1em 0 1em 0; */
 }
 
 /* footer */
@@ -173,14 +163,25 @@ nav label {
     clear: both;
   }
 
-  nav #home-logo {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  nav .home-logo {
+    font-size: 2.5em;
+    float: none;
+  }
+  nav a {
+    margin-right: 1.5em;
+  }
+  nav .nav-links {
+    /* display: none; */
+  }
+  nav .nav-links a {
     width: 100%;
-    float: left;
-    padding-left: 0.83333%;
-    padding-right: 0.83333%;
+    clear: both;
+  }
+  nav label {
+    display: block;
+    text-align: center;
+  }
+  nav :checked ~ .nav-links {
     display: block;
   }
 }

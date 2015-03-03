@@ -16,7 +16,7 @@ nav label {
 }
 
 .home-logo {
-  float:left;
+  float: left;
   /* padding-right: 400px; */
 }
 
@@ -26,10 +26,27 @@ nav label {
     @include container(100%);
   }
   nav {
-    #home-logo {
-      @include span(12);
-      display: block;
+    .home-logo {
+      font-size: 2.5em;
+      float: none;
     }
+    a {
+      margin-right: 1.5em;
+    }
+    .nav-links {
+      /* display: none; */
+       a{
+         width: 100%;
+         clear: both;
+       }
+    }
+    label {
+      display: block;
+      text-align: center;
+    }
+    :checked ~ .nav-links{
+		display: block;
+	  }
   }
 }
 

@@ -64,25 +64,15 @@ nav {
   border-bottom: 10px solid #012461;
   text-align: right;
   background-color: #f2f2f2;
+  padding: 0 1em;
 }
-nav ul {
-  display: inline;
-  /*   margin-left: 40%; */
-}
-nav ul li {
-  margin: 1em;
-  padding: 1em 0 1em 0;
-  display: inline;
-}
-nav ul li a {
+nav a {
   font-size: 1.5em;
   font-weight: bolder;
   line-height: 60px;
-}
-nav ul #home-logo {
-  text-align: left;
-  font-size: 5em;
-  padding: 0 20px 0 20px;
+  margin-right: 1em;
+  /* margin: 1em; */
+  /* padding: 1em 0 1em 0; */
 }
 
 /* footer */

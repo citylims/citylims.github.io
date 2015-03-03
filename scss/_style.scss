@@ -43,26 +43,19 @@ nav {
   border-bottom: 10px solid $accent-color;
   text-align: right;
   background-color: $background-color;
-  ul{
-    display: inline;
-  /*   margin-left: 40%; */
-    li {
-      margin: 1em;
-      padding: 1em 0 1em 0;
-      display: inline;
-      a {
-        font-size: 1.5em;
-        font-weight: bolder;
-        line-height: 60px;
-      }
+  padding: 0 1em;
+    a {
+      font-size: 1.5em;
+      font-weight: bolder;
+      line-height: 60px;
+      margin-right: 1em;
+      /* margin: 1em; */
+      /* padding: 1em 0 1em 0; */
+
     }
-    #home-logo {
-      text-align: left;
-      font-size: 5em;
-      padding: 0 20px 0 20px;
-    }
-  }
+
 }
+
 
 /* footer */
 
