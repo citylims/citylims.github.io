@@ -163,19 +163,21 @@ nav label {
     clear: both;
   }
 
+  nav {
+    text-align: left;
+  }
   nav .home-logo {
     font-size: 2.5em;
+    margin-left: 1em;
     float: none;
   }
-  nav a {
-    margin-right: 1.5em;
-  }
   nav .nav-links {
-    /* display: none; */
+    display: none;
   }
   nav .nav-links a {
-    width: 100%;
     clear: both;
+    margin: 0;
+    margin-left: .7em;
   }
   nav label {
     display: block;
