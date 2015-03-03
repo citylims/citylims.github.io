@@ -2,8 +2,48 @@
 @import 'breakpoint';
 @import "grid", "layout", "responsive", "style", "color";
 
+$mobile: max-width 30em;
+$tablet: 30em 60em;
+$full: 60em;
+
+input[type="checkbox"] {
+	display: none;
+}
+
+nav label {
+	display: none;
+	font-size: 2em;
+}
+
+.home-logo {
+  float:left;
+  /* padding-right: 400px; */
+}
+
+@include breakpoint($mobile) {
+	body {
+    background-color: red;
+    @include container(100%);
+  }
+  nav {
+    #home-logo {
+      @include span(12);
+      display: block;
+    }
+  }
+}
+
+label {
+  display: block;
+}
+
+:checked ~ #page-header nav li{
+  display: block;
+}
+
+
 .greeting {
-  @include span(12);
+  @include container(100%);
   img {
     float:left;
     max-height: 600px;
@@ -29,8 +69,6 @@ section {
     margin-left: 3em;
   }
 }
-
-
 
 /* greeting shaker */
 .shake:hover {

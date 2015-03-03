@@ -67,6 +67,7 @@ nav {
 }
 nav ul {
   display: inline;
+  /*   margin-left: 40%; */
 }
 nav ul li {
   margin: 1em;
@@ -79,8 +80,8 @@ nav ul li a {
   line-height: 60px;
 }
 nav ul #home-logo {
-  float: left;
-  font-size: 2em;
+  text-align: left;
+  font-size: 5em;
   padding: 0 20px 0 20px;
 }
 
@@ -145,14 +146,61 @@ footer p {
 
 /* bio */
 /* projects */
-.greeting {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 100%;
+input[type="checkbox"] {
+  display: none;
+}
+
+nav label {
+  display: none;
+  font-size: 2em;
+}
+
+.home-logo {
   float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
+  /* padding-right: 400px; */
+}
+
+@media (max-width: 30em) {
+  body {
+    background-color: red;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  nav #home-logo {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    display: block;
+  }
+}
+label {
+  display: block;
+}
+
+:checked ~ #page-header nav li {
+  display: block;
+}
+
+.greeting {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.greeting:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 .greeting img {
   float: left;
