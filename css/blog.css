@@ -1,4 +1,63 @@
 @import url(https://fonts.googleapis.com/css?family=Karla);
+input[type="checkbox"] {
+  display: none;
+}
+
+nav label {
+  display: none;
+  font-size: 2em;
+}
+
+.home-logo {
+  float: left;
+}
+
+@media (max-width: 30em) {
+  body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  nav .home-logo {
+    font-size: 2.5em;
+    margin-left: 1em;
+    float: none;
+  }
+  nav .nav-links {
+    text-align: left;
+    display: none;
+    margin: 0;
+  }
+  nav .nav-links a {
+    clear: both;
+    margin: 0;
+    margin-left: .8em;
+  }
+  nav label {
+    display: block;
+    text-align: center;
+  }
+  nav :checked ~ .nav-links {
+    display: block;
+  }
+
+  .greeting img {
+    display: none;
+  }
+  .greeting .blurb {
+    width: 80%;
+  }
+
+  footer p {
+    margin: 0;
+  }
+}
 @media (min-width: 64rem) {
   html {
     font-size: 120%;
@@ -65,6 +124,9 @@ nav {
   text-align: right;
   background-color: #f2f2f2;
   padding: 0 1em;
+}
+nav li {
+  display: inline;
 }
 nav a {
   font-size: 1.5em;

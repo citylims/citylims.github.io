@@ -12,6 +12,7 @@
   background: $accent-color;
 }
 
+
 /* main */
 a {
   color: $link-color;
@@ -44,6 +45,9 @@ nav {
   text-align: right;
   background-color: $background-color;
   padding: 0 1em;
+  li {
+    display: inline;
+  }
     a {
       font-size: 1.5em;
       font-weight: bolder;

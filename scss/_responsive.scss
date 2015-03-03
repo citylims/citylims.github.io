@@ -1,3 +1,59 @@
-$small: 500px;
-$medium: 700px;
-$large: 960px;
+$mobile: max-width 30em;
+$tablet: 30em 60em;
+$full: 60em;
+
+input[type="checkbox"] {
+	display: none;
+}
+
+nav label {
+	display: none;
+	font-size: 2em;
+}
+
+.home-logo {
+  float: left;
+}
+
+@include breakpoint($mobile) {
+	body {
+    @include container(100%);
+  }
+  nav {
+    .home-logo {
+      font-size: 2.5em;
+      margin-left: 1em;
+      float: none;
+    }
+    .nav-links {
+      text-align: left;
+      display: none;
+      margin: 0;
+       a{
+         clear: both;
+         margin: 0;
+         margin-left: .8em;
+       }
+    }
+    label {
+      display: block;
+      text-align: center;
+    }
+    :checked ~ .nav-links{
+		display: block ;
+	  }
+  }
+  .greeting {
+    img {
+    display: none;
+    }
+    .blurb {
+      width: 80%;
+    }
+  }
+  footer {
+    p{
+      margin: 0;
+    }
+  }
+}
