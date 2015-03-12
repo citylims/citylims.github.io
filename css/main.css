@@ -50,7 +50,6 @@ nav label {
 
   nav .home-logo {
     font-size: 2.5em;
-    margin-left: 1em;
     float: none;
   }
   nav .nav-links {
@@ -80,6 +79,13 @@ nav label {
 
   footer p {
     margin: 0;
+  }
+
+  .projects img {
+    width: 100%;
+  }
+  .projects .description {
+    width: 100%;
   }
 }
 /* global */

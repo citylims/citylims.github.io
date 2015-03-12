@@ -1,5 +1,5 @@
 $mobile: max-width 30em;
-$tablet: 30em 60em;
+$tablet: max-width 808px;
 $full: 60em;
 
 input[type="checkbox"] {
@@ -22,7 +22,6 @@ nav label {
   nav {
     .home-logo {
       font-size: 2.5em;
-      margin-left: 1em;
       float: none;
     }
     .nav-links {
@@ -56,4 +55,12 @@ nav label {
       margin: 0;
     }
   }
+	.projects {
+ 		img {
+			width: 100%;
+		}
+		.description {
+			width: 100%;
+		}
+	}
 }
