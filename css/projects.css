@@ -63,6 +63,11 @@ nav label {
   .projects .description, .projects .stat {
     width: 100%;
   }
+
+  .resume-page .item ul {
+    width: 80%;
+    clear: both;
+  }
 }
 @media (min-width: 64rem) {
   html {

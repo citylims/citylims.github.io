@@ -87,6 +87,11 @@ nav label {
   .projects .description {
     width: 100%;
   }
+
+  .resume-page .item ul {
+    width: 80%;
+    clear: both;
+  }
 }
 /* global */
 ::-moz-selection {
