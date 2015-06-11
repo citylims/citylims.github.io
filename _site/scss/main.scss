@@ -1,0 +1,90 @@
+@import 'susy';
+@import 'breakpoint';
+@import "grid", "layout", "responsive", "style", "color";
+
+.greeting {
+  @include container(100%);
+  img {
+    float:left;
+    max-height: 600px;
+    max-width: 500px;
+    @include span(4 of 12);
+  }
+  article {
+    margin-left: 50px;
+    @include span(6 at 4 of 12);
+    .bigger {
+    font-size: 145%; }
+    .medium-size {
+    font-size: 125%; }
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+section {
+  border-bottom: 5px solid $accent-color;
+  .blurb {
+    margin-left: 3em;
+  }
+}
+
+/* greeting shaker */
+.shake:hover {
+  -webkit-animation: shake .5s ease-in-out;
+  -moz-animation: shake .5s ease-in-out;
+  animation: shake .5s ease-in-out;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  20% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  40% {
+    -webkit-transform: translateX(10px);
+  }
+
+  60% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-moz-keyframes shake {
+  0% {
+    -moz-transform: translateX(0);
+  }
+
+  20% {
+    -moz-transform: translateX(-10px);
+  }
+
+  40% {
+    -moz-transform: translateX(10px);
+  }
+
+  60% {
+    -moz-transform: translateX(-10px);
+  }
+
+  80% {
+    -moz-transform: translateX(10px);
+  }
+
+  100% {
+    -moz-transform: translateX(0);
+  }
+}

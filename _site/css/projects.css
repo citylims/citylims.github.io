@@ -1,0 +1,277 @@
+@import url(https://fonts.googleapis.com/css?family=Karla);
+input[type="checkbox"] {
+  display: none;
+}
+
+nav label {
+  display: none;
+  font-size: 2em;
+}
+
+.home-logo {
+  float: left;
+}
+
+@media (max-width: 30em) {
+  body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  nav .home-logo {
+    font-size: 2.5em;
+    float: none;
+  }
+  nav .nav-links {
+    text-align: left;
+    display: none;
+    margin: 0;
+  }
+  nav .nav-links a {
+    clear: both;
+    margin: 0;
+    margin-left: .8em;
+  }
+  nav label {
+    display: block;
+    text-align: center;
+  }
+  nav :checked ~ .nav-links {
+    display: block;
+  }
+
+  .greeting img {
+    display: none;
+  }
+  .greeting .blurb {
+    width: 80%;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .projects img {
+    width: 100%;
+  }
+  .projects .description, .projects .stat {
+    width: 100%;
+  }
+
+  .resume-page .item ul {
+    width: 80%;
+    clear: both;
+  }
+}
+@media (min-width: 64rem) {
+  html {
+    font-size: 120%;
+  }
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Karla";
+}
+body:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* global */
+::-moz-selection {
+  color: white;
+  background: #012461;
+}
+
+::selection {
+  color: white;
+  background: #012461;
+}
+
+/* main */
+a {
+  color: #00519F;
+  text-decoration: none;
+  transition-duration: .4s;
+}
+a:hover {
+  color: white;
+  background-color: #012461;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+/* nav */
+nav {
+  width: 100%;
+  border-bottom: 10px solid #012461;
+  text-align: right;
+  background-color: #f2f2f2;
+  padding: 0 1em;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  font-size: 1.5em;
+  font-weight: bolder;
+  line-height: 60px;
+  margin-right: 1em;
+  /* margin: 1em; */
+  /* padding: 1em 0 1em 0; */
+}
+
+/* footer */
+footer {
+  background-color: #f2f2f2;
+  border-top: 1px solid #012461;
+  clear: both;
+  padding: .5em;
+}
+
+footer p {
+  font-size: 19.2px;
+  font-size: 1.2rem;
+  margin: 2em auto 0;
+  text-align: center;
+}
+
+.icons {
+  text-align: center;
+}
+
+.icons li {
+  display: inline;
+  margin: .5em;
+}
+
+.icons li a {
+  font-size: 38.4px;
+  font-size: 2.4rem;
+  border-bottom: none;
+  color: #696969;
+}
+.icons li a:hover {
+  /* to reset ::selection  */
+  background-color: #f2f2f2;
+}
+
+.fa-codepen:hover {
+  color: black;
+}
+
+.fa-envelope-o:hover {
+  color: #64A9DD;
+}
+
+.fa-medium:hover {
+  color: black;
+}
+
+.fa-linkedin-square:hover {
+  color: #1F84BA;
+}
+
+.fa-twitter:hover {
+  color: #64A9DD;
+}
+
+.fa-github:hover {
+  color: black;
+}
+
+/* bio */
+/* projects */
+img {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+  margin: 15px 0 15px 0;
+  padding-top: 20px;
+  opacity: 1;
+}
+img:hover {
+  opacity: .8;
+}
+
+.projects {
+  clear: both;
+}
+.projects h2 {
+  color: black;
+  font-size: 1.3em;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+.projects h3 {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  text-indent: 3.5em;
+}
+.projects b {
+  color: #012461;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+}
+
+.item {
+  /* @include container(100%); */
+}
+
+.description, .stat {
+  margin-top: .5em;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+
+.stat ul {
+  margin-top: -10px;
+  text-indent: 20px;
+}
+.stat ul li {
+  font-weight: bold;
+}
+.stat p {
+  font-size: 90%;
+  text-indent: 3.5em;
+}

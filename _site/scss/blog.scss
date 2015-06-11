@@ -1,0 +1,12 @@
+@import 'susy';
+@import 'breakpoint';
+@import "grid", "responsive", "layout", "style", "color";
+
+.blog {
+  width: 30%;
+  margin: 0 auto;
+  h2 {
+    border-bottom: 2px solid $accent-color;
+    text-align: center;
+  }
+}
