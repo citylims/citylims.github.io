@@ -97,4 +97,19 @@ nav label {
 			margin-left: 5em;
 		}
 	}
+	.bio {
+		.container {
+			width: 100%;
+			.bio-header {
+				h1 {
+					font-size: 30px;
+					text-align: center;
+				}
+			}
+			ul {
+				margin-left: -20px;
+				margin-right: 5px;
+			}
+		}
+	}
 }

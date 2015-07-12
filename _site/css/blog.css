@@ -101,6 +101,18 @@ nav label {
     margin-right: 7em;
     margin-left: 5em;
   }
+
+  .bio .container {
+    width: 100%;
+  }
+  .bio .container .bio-header h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .bio .container ul {
+    margin-left: -20px;
+    margin-right: 5px;
+  }
 }
 @media (min-width: 64rem) {
   html {
@@ -351,5 +363,17 @@ nav label {
   .resume-page h4 ul {
     margin-right: 7em;
     margin-left: 5em;
+  }
+
+  .bio .container {
+    width: 100%;
+  }
+  .bio .container .bio-header h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .bio .container ul {
+    margin-left: -20px;
+    margin-right: 5px;
   }
 }
