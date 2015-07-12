@@ -1,6 +1,6 @@
 @import 'susy';
 @import 'breakpoint';
-@import "grid", "layout", "responsive", "style", "color";
+@import "grid", "layout", "style", "color";
 
 .greeting {
   @include container(100%);
@@ -88,3 +88,6 @@ section {
     -moz-transform: translateX(0);
   }
 }
+
+
+@import "responsive";

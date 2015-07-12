@@ -24,19 +24,27 @@ nav label {
     clear: both;
   }
 
+  nav {
+    padding: 0;
+  }
   nav .home-logo {
-    font-size: 2.5em;
+    font-size: 1.5em;
     float: none;
+    display: block;
+    text-align: center;
+    margin: 0;
   }
   nav .nav-links {
-    text-align: left;
+    text-align: center;
     display: none;
     margin: 0;
   }
   nav .nav-links a {
-    clear: both;
-    margin: 0;
-    margin-left: .8em;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-right: 0;
+    padding: 0 1em;
   }
   nav label {
     display: block;
@@ -44,17 +52,39 @@ nav label {
   }
   nav :checked ~ .nav-links {
     display: block;
+    text-align: center;
   }
 
+  .greeting {
+    padding: 0 30px;
+  }
+  .greeting .blurb {
+    margin: 0;
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  .greeting .blurb h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+  }
   .greeting img {
     display: none;
   }
-  .greeting .blurb {
-    width: 80%;
-  }
 
+  footer {
+    padding: 0;
+  }
+  footer ul {
+    padding: 0;
+  }
+  footer .icons li a {
+    font-size: 1.4rem !important;
+  }
   footer p {
-    margin: 0;
+    margin: 25px 20px;
+    font-size: 14px;
   }
 
   .projects img {
@@ -64,9 +94,12 @@ nav label {
     width: 100%;
   }
 
-  .resume-page .item ul {
-    width: 80%;
-    clear: both;
+  .resume-page {
+    margin-left: 0;
+  }
+  .resume-page h4 ul {
+    margin-right: 7em;
+    margin-left: 5em;
   }
 }
 @media (min-width: 64rem) {
@@ -131,10 +164,10 @@ h1 {
 /* nav */
 nav {
   width: 100%;
-  border-bottom: 10px solid #012461;
+  border-bottom: 2px solid #012461;
   text-align: right;
   background-color: #f2f2f2;
-  padding: 0 1em;
+  padding: 0 1em 0 0;
 }
 nav li {
   display: inline;
@@ -144,8 +177,7 @@ nav a {
   font-weight: bolder;
   line-height: 60px;
   margin-right: 1em;
-  /* margin: 1em; */
-  /* padding: 1em 0 1em 0; */
+  padding: 0 1em;
 }
 
 /* footer */
@@ -279,4 +311,108 @@ footer p {
   box-sizing: border-box;
   height: 1px;
   background: #2E81B7;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+nav label {
+  display: none;
+  font-size: 2em;
+}
+
+.home-logo {
+  float: left;
+}
+
+@media (max-width: 30em) {
+  body {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  nav {
+    padding: 0;
+  }
+  nav .home-logo {
+    font-size: 1.5em;
+    float: none;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  nav .nav-links {
+    text-align: center;
+    display: none;
+    margin: 0;
+  }
+  nav .nav-links a {
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-right: 0;
+    padding: 0 1em;
+  }
+  nav label {
+    display: block;
+    text-align: center;
+  }
+  nav :checked ~ .nav-links {
+    display: block;
+    text-align: center;
+  }
+
+  .greeting {
+    padding: 0 30px;
+  }
+  .greeting .blurb {
+    margin: 0;
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  .greeting .blurb h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .greeting img {
+    display: none;
+  }
+
+  footer {
+    padding: 0;
+  }
+  footer ul {
+    padding: 0;
+  }
+  footer .icons li a {
+    font-size: 1.4rem !important;
+  }
+  footer p {
+    margin: 25px 20px;
+    font-size: 14px;
+  }
+
+  .projects img {
+    width: 100%;
+  }
+  .projects .description {
+    width: 100%;
+  }
+
+  .resume-page {
+    margin-left: 0;
+  }
+  .resume-page h4 ul {
+    margin-right: 7em;
+    margin-left: 5em;
+  }
 }

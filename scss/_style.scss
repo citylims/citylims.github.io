@@ -41,23 +41,20 @@ h1 {
 
 nav {
   width: 100%;
-  border-bottom: 10px solid $accent-color;
+  border-bottom: 2px solid $accent-color;
   text-align: right;
   background-color: $background-color;
-  padding: 0 1em;
+  padding: 0 1em 0 0;
   li {
     display: inline;
   }
-    a {
-      font-size: 1.5em;
-      font-weight: bolder;
-      line-height: 60px;
-      margin-right: 1em;
-      /* margin: 1em; */
-      /* padding: 1em 0 1em 0; */
-
-    }
-
+  a {
+    font-size: 1.5em;
+    font-weight: bolder;
+    line-height: 60px;
+    margin-right: 1em;
+    padding: 0 1em;
+  }
 }
 
 

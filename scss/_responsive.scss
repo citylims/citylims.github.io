@@ -20,18 +20,25 @@ nav label {
     @include container(100%);
   }
   nav {
+		padding: 0;
     .home-logo {
-      font-size: 2.5em;
+      font-size: 1.5em;
       float: none;
+			display: block;
+		  text-align: center;
+			margin: 0;
     }
     .nav-links {
-      text-align: left;
+      text-align: center;
       display: none;
       margin: 0;
+
        a{
-         clear: both;
-         margin: 0;
-         margin-left: .8em;
+				 font-size: 16px;
+			   font-weight: bolder;
+			   line-height: 60px;
+			   margin-right: 0;
+				 padding: 0 1em;
        }
     }
     label {
@@ -39,20 +46,38 @@ nav label {
       text-align: center;
     }
     :checked ~ .nav-links{
-		display: block ;
+		display: block;
+		text-align: center;
 	  }
   }
   .greeting {
+		padding: 0 30px;
+		.blurb {
+			margin: 0;
+			width: 100%;
+			float: none;
+			padding: 0;
+			h1 {
+				font-size: 30px;
+				text-align: center;
+				margin-top: 15px;
+			}
+		}
     img {
     display: none;
-    }
-    .blurb {
-      width: 80%;
-    }
+		}
   }
   footer {
+		padding: 0;
+		ul {
+			padding: 0;
+		}
+		.icons li a {
+			font-size: 1.4rem !important;
+		}
     p{
-      margin: 0;
+      margin: 25px 20px;
+			font-size: 14px;
     }
   }
 	.projects {
@@ -64,9 +89,12 @@ nav label {
 		}
 	}
 	.resume-page {
+		margin-left: 0;
 		.item ul {
-			width: 80%;
-			clear: both;
+		}
+		h4 ul {
+			margin-right: 7em;
+			margin-left: 5em;
 		}
 	}
 }
