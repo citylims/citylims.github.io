@@ -44,7 +44,7 @@ nav label {
     font-weight: bolder;
     line-height: 60px;
     margin-right: 0;
-    padding: 0 1em;
+    padding: 0 12px;
   }
   nav label {
     display: block;
@@ -90,8 +90,26 @@ nav label {
   .projects img {
     width: 100%;
   }
+  .projects h3 {
+    text-indent: 0;
+    text-align: center;
+  }
   .projects .description {
     width: 100%;
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  .projects .stat p {
+    display: block;
+    width: 100%;
+    text-indent: 0;
+    text-align: center;
+  }
+  .projects .stat ul {
+    text-indent: 0;
+  }
+  .projects .stat ul li {
+    font-size: 96%;
   }
 
   .resume-page {
@@ -370,7 +388,7 @@ nav label {
     font-weight: bolder;
     line-height: 60px;
     margin-right: 0;
-    padding: 0 1em;
+    padding: 0 12px;
   }
   nav label {
     display: block;
@@ -416,8 +434,26 @@ nav label {
   .projects img {
     width: 100%;
   }
+  .projects h3 {
+    text-indent: 0;
+    text-align: center;
+  }
   .projects .description {
     width: 100%;
+    padding: 0 20px;
+    margin-top: 0;
+  }
+  .projects .stat p {
+    display: block;
+    width: 100%;
+    text-indent: 0;
+    text-align: center;
+  }
+  .projects .stat ul {
+    text-indent: 0;
+  }
+  .projects .stat ul li {
+    font-size: 96%;
   }
 
   .resume-page {
