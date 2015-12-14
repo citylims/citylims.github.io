@@ -3,7 +3,7 @@
 @import "grid", "layout", "style", "color";
 
 img {
-  @include span(8 of 12);
+  @include span(75%);
   margin: 15px 0 15px 0;
   padding-top: 20px;
   opacity: 1;
