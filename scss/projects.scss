@@ -52,6 +52,13 @@ img {
   .proj-source {
     text-align: center;
     margin: 10px 0 25px;
+    .private-link {
+      text-decoration: line-through;
+      &:hover {
+        color: $link-color;
+        background: none;
+      }
+    }
   }
 }
 

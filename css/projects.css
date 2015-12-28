@@ -197,6 +197,13 @@ img:hover {
   text-align: center;
   margin: 10px 0 25px;
 }
+.blurb .proj-source .private-link {
+  text-decoration: line-through;
+}
+.blurb .proj-source .private-link:hover {
+  color: #00519F;
+  background: none;
+}
 
 .specs {
   padding-left: 100px;
