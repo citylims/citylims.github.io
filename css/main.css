@@ -185,7 +185,7 @@ section {
   border-bottom: 5px solid #012461;
 }
 section .blurb {
-  margin-left: 3em;
+  margin: 3em 0 0 3em;
 }
 
 /* greeting shaker */
