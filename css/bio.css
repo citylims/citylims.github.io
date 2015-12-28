@@ -131,6 +131,13 @@ nav label {
     margin-left: -20px;
     margin-right: 5px;
   }
+
+  .proj-header {
+    text-align: center;
+  }
+  .proj-header h1 {
+    font-size: 2em;
+  }
 }
 @media (min-width: 64rem) {
   html {
@@ -187,8 +194,9 @@ li {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bolder;
+  margin: 0px;
 }
 
 /* nav */
@@ -483,5 +491,12 @@ nav label {
   .bio .container ul {
     margin-left: -20px;
     margin-right: 5px;
+  }
+
+  .proj-header {
+    text-align: center;
+  }
+  .proj-header h1 {
+    font-size: 2em;
   }
 }
