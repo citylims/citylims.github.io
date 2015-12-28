@@ -12,6 +12,17 @@ nav label {
   float: left;
 }
 
+@media (max-width: 808px) {
+  .blurb {
+    width: 100%;
+  }
+
+  .specs {
+    width: 100%;
+    clear: both;
+    padding: 0 6px;
+  }
+}
 @media (max-width: 30em) {
   body {
     max-width: 100%;
@@ -373,6 +384,17 @@ nav label {
   float: left;
 }
 
+@media (max-width: 808px) {
+  .blurb {
+    width: 100%;
+  }
+
+  .specs {
+    width: 100%;
+    clear: both;
+    padding: 0 6px;
+  }
+}
 @media (max-width: 30em) {
   body {
     max-width: 100%;

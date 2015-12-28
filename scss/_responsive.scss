@@ -15,6 +15,17 @@ nav label {
   float: left;
 }
 
+@include breakpoint($tablet) {
+	.blurb {
+		width: 100%;
+	}
+	.specs {
+		width: 100%;
+		clear: both;
+		padding: 0 6px;
+	}
+}
+
 @include breakpoint($mobile) {
 	body {
     @include container(100%);

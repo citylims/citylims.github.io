@@ -147,8 +147,8 @@ img {
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
-  margin: 15px 0 15px 0;
-  padding-top: 20px;
+  margin: 8px 0 8px 0;
+  /* padding-top: 14px; */
   opacity: 1;
 }
 img:hover {
@@ -181,18 +181,29 @@ img:hover {
   color: #012461;
 }
 
+.info-wrap {
+  margin: 40px;
+}
+
 .blurb {
   padding: 0 6px;
   width: 50%;
   float: left;
 }
+.blurb .proj-descr {
+  margin-bottom: 3px;
+}
+.blurb .proj-source {
+  text-align: center;
+  margin: 10px 0 25px;
+}
 
-.stat {
-  padding-left: 40px;
+.specs {
+  padding-left: 100px;
   width: 50%;
   float: left;
 }
-.stat ul {
+.specs ul {
   padding: 0px;
 }
 
@@ -209,6 +220,17 @@ nav label {
   float: left;
 }
 
+@media (max-width: 808px) {
+  .blurb {
+    width: 100%;
+  }
+
+  .specs {
+    width: 100%;
+    clear: both;
+    padding: 0 6px;
+  }
+}
 @media (max-width: 30em) {
   body {
     max-width: 100%;
