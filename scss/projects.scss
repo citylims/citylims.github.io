@@ -3,7 +3,7 @@
 @import "grid", "layout", "style", "color";
 
 img {
-  @include span(75%);
+  @include span(12);
   margin: 15px 0 15px 0;
   padding-top: 20px;
   opacity: 1;
@@ -14,6 +14,7 @@ img {
 
 .projects {
   clear: both;
+  margin: 50px;
   h2{
     color: $primary-color;
     font-size: 1.3em;
@@ -37,7 +38,7 @@ img {
 }
 
 .item {
-/* @include container(100%); */
+@include container(100%);
 }
 
 .description {

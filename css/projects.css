@@ -142,7 +142,7 @@ img {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 66.66667%;
+  width: 100%;
   float: left;
   padding-left: 0.83333%;
   padding-right: 0.83333%;
@@ -156,6 +156,7 @@ img:hover {
 
 .projects {
   clear: both;
+  margin: 50px;
 }
 .projects h2 {
   color: black;
@@ -179,7 +180,14 @@ img:hover {
 }
 
 .item {
-  /* @include container(100%); */
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.item:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .description, .stat {
