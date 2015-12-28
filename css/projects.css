@@ -156,13 +156,14 @@ img:hover {
 
 .projects {
   clear: both;
-  margin: 50px;
+  margin: 5px 50px;
 }
 .projects h2 {
   color: black;
   font-size: 1.3em;
   font-weight: bolder;
   text-decoration: underline;
+  margin: 0px;
 }
 .projects h3 {
   color: black;
@@ -174,45 +175,40 @@ img:hover {
   color: #012461;
 }
 
-.title {
+.blurb {
+  padding: 0 6px;
+  width: 50%;
+  float: left;
+}
+
+/* .title {
   font-size: 2em;
   text-align: center;
 }
 
 .item {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.item:after {
-  content: " ";
-  display: block;
-  clear: both;
+@include container(100%);
 }
 
-.description, .stat {
+.description {
   margin-top: .5em;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 0.83333%;
-  padding-right: 0.83333%;
+  @include span(4 at 8 of 12);
 }
 
-.stat ul {
-  margin-top: -10px;
-  text-indent: 20px;
-}
-.stat ul li {
-  font-weight: bold;
-}
-.stat p {
-  font-size: 90%;
-  text-indent: 3.5em;
-}
-
+.stat {
+  @extend .description;
+  ul {
+    margin-top: -10px;
+    text-indent: 20px;
+    li {
+      font-weight: bold;
+    }
+  }
+  p {
+    font-size: 90%;
+    text-indent: 3.5em;
+  }
+} */
 input[type="checkbox"] {
   display: none;
 }
@@ -308,7 +304,7 @@ nav label {
     text-indent: 0;
     text-align: center;
   }
-  .projects .description, .projects .stat {
+  .projects .description {
     width: 100%;
     padding: 0 20px;
     margin-top: 0;
